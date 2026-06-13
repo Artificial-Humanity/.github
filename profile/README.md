@@ -26,7 +26,7 @@ We maintain all of our code, crates, and client packages in a single unified wor
 
 *   **`prosodia-core` (Rust)**: The core orchestration crate managing document parsing (EPUB/TXT), page layouts, chapter segmentation, and cross-platform desktop/mobile runtime states.
 *   **`prosodia-director` (Rust)**: The lookahead pacing director. Analyzes narrative context, maps text layouts, and translates emotional coordinates into dynamic acoustic style vectors.
-*   **`prosodia-actor` (Rust)**: The speech synthesis engine. Performs on-device execution of StyleTTS2 models using ONNX Runtime, generating highly expressive audio waveforms dynamically.
+*   **`prosodia-actor` (Rust)**: The speech synthesis engine. Performs on-device execution of StyleTTS2 models using our custom native synthesis engine, generating highly expressive audio waveforms dynamically.
 *   **`AnimaReader` (App)**: A delightful cross-platform eBook reader application (built in Rust, Swift, and Kotlin) that wraps the pipeline into an immersive, offline reading and audiobook experience.
 
 ---
@@ -36,7 +36,7 @@ We maintain all of our code, crates, and client packages in a single unified wor
 Whether you are a developer, a linguist, an AI researcher, or just someone who loves a good book—we would love to have you in the community!
 
 - **Refining Style Models**: Help us build and train our custom variant of StyleTTS2 to replace generic models.
-- **Performance Tuning**: Submit PRs to optimize ONNX Runtime execution paths and CPU/GPU memory overhead across desktop and mobile platforms.
+- **Performance Tuning**: Submit PRs to optimize custom synthesis execution paths and CPU/GPU memory overhead across desktop and mobile platforms.
 - **eReader Design**: Join us in designing and testing the user experience for the AnimaReader application.
 
 ---
