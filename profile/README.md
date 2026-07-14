@@ -20,10 +20,18 @@ Yes, our local models are taught to pause for a deep breath mid-sentence—even 
 
 We maintain all of our code, crates, and client packages in a single unified workspace at **[Artificial-Humanity/Prosodia](https://github.com/Artificial-Humanity/Prosodia)**:
 
-*   **`prosodia-core` (Rust)**: The core orchestration crate managing document parsing (EPUB/TXT), page layouts, chapter segmentation, and cross-platform desktop/mobile runtime states.
-*   **`prosodia-director` (Rust)**: The lookahead pacing director. Analyzes narrative context, maps text layouts, and translates emotional coordinates into dynamic acoustic style vectors.
-*   **`prosodia-actor` (Rust)**: The speech synthesis engine. Performs on-device execution of StyleTTS2 models using our custom native synthesis engine, generating highly expressive audio waveforms dynamically.
-*   **`AnimaReader` (App)**: A delightful cross-platform eBook reader application (built in Rust, Swift, and Kotlin) that wraps the pipeline into an immersive, offline reading and audiobook experience.
+*   **`core` (Rust)**: The vocabulary index, BPE tokenizer, and shared traits underpinning the rest of the workspace.
+*   **`folioparser` (Rust)**: Parses EPUB XML structures and extracts plain text for narration.
+*   **`director` (Rust)**: The lookahead pacing director. Driven by Gemma (LiteRT-LM), it reads book passages and translates emotional context into Valence-Arousal-Tension coordinates and casting assignments.
+*   **`actor` (Rust)**: The speech synthesis engine. Performs on-device execution of StyleTTS2 models via our custom native synthesis engine, generating expressive audio waveforms dynamically.
+*   **`stage` (Rust)**: The Stage Manager. Coordinates the Director and the Actor and keeps playback gapless.
+*   Platform bridges for **Apple, Android, Linux, and Windows**, plus downstream apps: the **AppleReader** and **Android Reader** eBook readers, and the **Tuner** rehearsal workbench (desktop app + Chrome extension) for auditioning VAD sliders and casting profiles.
+
+---
+
+## 🧑‍⚖️ Introducing Council of Experts
+
+Our second studio initiative is **[Council of Experts](https://github.com/Artificial-Humanity/Council-of-Experts)**—a native macOS orchestration platform that runs a configurable council of LLM experts (Claude, Gemini, GPT, Grok, and local models) in parallel, has them critique and revise each other's drafts, and synthesizes their consensus through a Chairman model. It's built on the same philosophy as Prosodia: a Rust core with a native Swift/SwiftUI FFI layer, supporting live streaming, workspace file context, and multi-turn session persistence.
 
 ---
 
@@ -33,7 +41,8 @@ Whether you are a developer, a linguist, an AI researcher, or just someone who l
 
 - **Refining Style Models**: Help us build and train our custom variant of StyleTTS2 to replace generic models.
 - **Performance Tuning**: Submit PRs to optimize custom synthesis execution paths and CPU/GPU memory overhead across desktop and mobile platforms.
-- **eReader Design**: Join us in designing and testing the user experience for the AnimaReader application.
+- **eReader Design**: Join us in designing and testing the user experience for the AppleReader and Android Reader apps.
+- **Multi-Agent Orchestration**: Help refine the critique/consensus loops and sandboxed agentic coding flow in Council of Experts.
 
 ---
 
