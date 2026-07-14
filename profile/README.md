@@ -1,10 +1,6 @@
 # Artificial Humanity 👤✨
 
-<p align="center">
-  <img src="hero.png" width="500" alt="Project Prosodia Storytelling Illustration" />
-</p>
-
-Welcome to **Artificial Humanity**! We are a research and engineering studio dedicated to building AI projects that touch upon the space between machine intelligence and human emotion. We are a wholly owned subsidiary of **[McFarlin Technologies, LLC](https://mcfarlin.technology)**.
+Welcome to **Artificial Humanity**! We are a research and engineering studio dedicated to building AI projects that touch upon the space between machine intelligence and human emotion.
 
 Our core philosophy is simple: **we believe artificial intelligence should run locally, respect privacy, and engage with human feeling.** No remote cloud APIs, no data locks, and no delay. Just native, high-performance engines that feel alive.
 
