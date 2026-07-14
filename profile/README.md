@@ -14,19 +14,6 @@ Our flagship initiative is **[Project Prosodia](https://github.com/Artificial-Hu
 
 ---
 
-## 🧭 The Prosodia Workspace
-
-We maintain all of our code, crates, and client packages in a single unified workspace at **[Artificial-Humanity/Prosodia](https://github.com/Artificial-Humanity/Prosodia)**:
-
-*   **`core` (Rust)**: The vocabulary index, BPE tokenizer, and shared traits underpinning the rest of the workspace.
-*   **`folioparser` (Rust)**: Parses EPUB XML structures and extracts plain text for narration.
-*   **`director` (Rust)**: The lookahead pacing director. Driven by Gemma (LiteRT-LM), it reads book passages and translates emotional context into Valence-Arousal-Tension coordinates and casting assignments.
-*   **`actor` (Rust)**: The speech synthesis engine. Performs on-device execution of StyleTTS2 models via our custom native synthesis engine, generating expressive audio waveforms dynamically.
-*   **`stage` (Rust)**: The Stage Manager. Coordinates the Director and the Actor and keeps playback gapless.
-*   Platform bridges for **Apple, Android, Linux, and Windows**, plus downstream apps: the **AppleReader** and **Android Reader** eBook readers, and the **Tuner** rehearsal workbench (desktop app + Chrome extension) for auditioning VAD sliders and casting profiles.
-
----
-
 ## 🧑‍⚖️ Introducing Council of Experts
 
 Our second studio initiative is **[Council of Experts](https://github.com/Artificial-Humanity/Council-of-Experts)**—a native macOS orchestration platform that runs a configurable council of LLM experts (Claude, Gemini, GPT, Grok, and local models) in parallel, has them critique and revise each other's drafts, and synthesizes their consensus through a Chairman model. It's built on the same philosophy as Prosodia: a Rust core with a native Swift/SwiftUI FFI layer, supporting live streaming, workspace file context, and multi-turn session persistence.
