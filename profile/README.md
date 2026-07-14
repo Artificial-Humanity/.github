@@ -8,11 +8,9 @@ Our core philosophy is simple: **we believe artificial intelligence should run l
 
 ## 🎙️ Introducing Project Prosodia
 
-Our flagship initiative is **[Project Prosodia](https://github.com/Artificial-Humanity/Prosodia)**—an open-source framework and suite of engines dedicated to expressive, continuous, emotion-driven speech synthesis. 
+Our flagship initiative is **[Project Prosodia](https://github.com/Artificial-Humanity/Prosodia)**—an open-source framework for expressive, continuous, emotion-driven speech synthesis. It splits speech generation into a protocol-based pipeline, separating semantic interpretation (the **Director**) from vocal performance (the **Actor**, powered by **StyleTTS2**), so digital books are read with dynamic pacing, dramatic pauses, and real-time voice blending—no robotic conveyor-belt narration here.
 
-Existing speech engines treat reading like a dry, robotic conveyor belt. Project Prosodia treats it like **acting**. By splitting speech generation into a protocol-based pipeline—separating semantic interpretation (the **Director**) from vocal performance (the **Actor**) and executing it using **StyleTTS2**—we enable digital books to be read with dynamic pacing, dramatic pauses, and real-time voice blending.
-
-Yes, our local models are taught to pause for a deep breath mid-sentence—even though they don't have lungs. It just sounds better that way.
+**Fun facts:** we're hunting for the exact Valence-Arousal-Tension coordinate for *"the hero's tragic sacrifice,"* to get the Actor's voice to crack slightly. And since the engine compiles and runs entirely offline, you'd still have a perfect narrator even stranded on a mountaintop with a laptop.
 
 ---
 
@@ -34,21 +32,5 @@ We maintain all of our code, crates, and client packages in a single unified wor
 Our second studio initiative is **[Council of Experts](https://github.com/Artificial-Humanity/Council-of-Experts)**—a native macOS orchestration platform that runs a configurable council of LLM experts (Claude, Gemini, GPT, Grok, and local models) in parallel, has them critique and revise each other's drafts, and synthesizes their consensus through a Chairman model. It's built on the same philosophy as Prosodia: a Rust core with a native Swift/SwiftUI FFI layer, supporting live streaming, workspace file context, and multi-turn session persistence.
 
 ---
-
-## 🤝 Getting Involved
-
-Whether you are a developer, a linguist, an AI researcher, or just someone who loves a good book—we would love to have you in the community!
-
-- **Refining Style Models**: Help us build and train our custom variant of StyleTTS2 to replace generic models.
-- **Performance Tuning**: Submit PRs to optimize custom synthesis execution paths and CPU/GPU memory overhead across desktop and mobile platforms.
-- **eReader Design**: Join us in designing and testing the user experience for the AppleReader and Android Reader apps.
-- **Multi-Agent Orchestration**: Help refine the critique/consensus loops and sandboxed agentic coding flow in Council of Experts.
-
----
-
-## 🍿 Fun Facts
-
-1. **Vocal Inflection**: Our Valence-Arousal-Tension model maps emotion coordinates. We are currently trying to figure out the coordinate for *"the exact moment the hero makes a tragic sacrifice"* to see if we can get the Actor's voice to crack slightly.
-2. **Offline-First**: Every single line of code in our Prosodia engine compiles and runs entirely offline. If you ever find yourself stranded on a mountaintop with a laptop, you'll still have a perfect, expressive narrator reading to you.
 
 Thanks for stopping by, and happy coding! 👤✨
