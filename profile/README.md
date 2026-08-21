@@ -20,4 +20,12 @@ Our second studio initiative is **[Council of Experts](https://github.com/Artifi
 
 ---
 
+## ⚙️ Introducing FerroStep
+
+<img src="https://raw.githubusercontent.com/Artificial-Humanity/.github/main/assets/ferrostep-icon.png" width="96" align="right" alt="FerroStep: a stepped path from a hollow initial-state node to a glowing terminal-state node">
+
+Our newest initiative is **[FerroStep](https://github.com/Artificial-Humanity/FerroStep)**—a data-driven state-machine referee for multi-agent loops. Instead of hiding orchestration state inside a framework's graph object, FerroStep treats **your own database as the single source of truth**: AI agents and humans act as peers on one ledger, while a pure Rust core rules on every transition—who may move what, what a retry costs, and when a human takes over. Loop ceilings survive crashes, escalation is a routing decision rather than an error, and the whole system is inspectable with a database browser. True to the studio philosophy: an engine, not a platform—no runtime, no scheduler, no hosted anything.
+
+---
+
 Thanks for stopping by, and happy coding! 👤✨
