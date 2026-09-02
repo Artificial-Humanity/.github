@@ -8,15 +8,27 @@ Our core philosophy is simple: **we believe artificial intelligence should run l
 
 ## 🎙️ Introducing Project Prosodia
 
-Our flagship initiative is **[Project Prosodia](https://github.com/Artificial-Humanity/Prosodia)**—an open-source framework for expressive, continuous, emotion-driven speech synthesis. It splits speech generation into a protocol-based pipeline, separating semantic interpretation (the **Director**) from vocal performance (the **Actor**, powered by **StyleTTS2**), so digital books are read with dynamic pacing, dramatic pauses, and real-time voice blending—no robotic conveyor-belt narration here.
+Our flagship initiative is **[Project Prosodia](https://github.com/Artificial-Humanity/Prosodia)**—an open-source framework for expressive, continuous, emotion-driven speech synthesis. It splits speech generation into a protocol-based pipeline, separating semantic interpretation (the **Director**) from vocal performance (the **Actor**, powered by our own **Sonora** model), so digital books are read with dynamic pacing, dramatic pauses, and real-time voice blending—no robotic conveyor-belt narration here.
 
 **Fun facts:** we're hunting for the exact Valence-Arousal-Tension coordinate for *"the hero's tragic sacrifice,"* to get the Actor's voice to crack slightly. And since the engine compiles and runs entirely offline, you'd still have a perfect narrator even stranded on a mountaintop with a laptop.
 
 ---
 
+## 🎭 Introducing Sonora
+
+The voice inside Prosodia is its own project: **[Sonora](https://github.com/Artificial-Humanity/Sonora)**—a directable, castable, mobile-friendly TTS actor we train from scratch on license-clean data. It is built on the **Matcha-TTS** architecture (a conditional flow-matching mel decoder solved with a few-step ODE), augmented with emotion conditioning and continuous voice casting, so valence, energy and tension arrive as things you *tell* the model rather than hope for. Small enough to run on a phone, and Apache-2.0 like everything else here.
+
+---
+
 ## 🧑‍⚖️ Introducing Council of Experts
 
-Our second studio initiative is **[Council of Experts](https://github.com/Artificial-Humanity/Council-of-Experts)**—a native macOS orchestration platform that runs a configurable council of LLM experts (Claude, Gemini, GPT, Grok, and local models) in parallel, has them critique and revise each other's drafts, and synthesizes their consensus through a Chairman model. It's built on the same philosophy as Prosodia: a Rust core with a native Swift/SwiftUI FFI layer, supporting live streaming, workspace file context, and multi-turn session persistence.
+Another studio initiative is **[Council of Experts](https://github.com/Artificial-Humanity/Council-of-Experts)**—a native macOS orchestration platform that runs a configurable council of LLM experts (Claude, Gemini, GPT, Grok, and local models) in parallel, has them critique and revise each other's drafts, and synthesizes their consensus through a Chairman model. It's built on the same philosophy as Prosodia: a Rust core with a native Swift/SwiftUI FFI layer, supporting live streaming, workspace file context, and multi-turn session persistence.
+
+---
+
+## 🎨 Introducing Lucida
+
+**[Lucida](https://github.com/Artificial-Humanity/Lucida)** is the studio's own image and video generation tool, and a single Rust binary either way. It reaches Google Gemini and Veo, Runway, Kling, hosted FLUX, Stability AI, OpenAI, or a ComfyUI running on your own hardware. It works as a command-line tool and as an **MCP server**, so the coding agents working on these projects can make their own artwork instead of waiting for someone to hand it over.
 
 ---
 
@@ -24,7 +36,13 @@ Our second studio initiative is **[Council of Experts](https://github.com/Artifi
 
 <img src="https://raw.githubusercontent.com/Artificial-Humanity/.github/main/assets/ferrostep-icon.png" width="96" align="right" alt="FerroStep: a stepped path from a hollow initial-state node to a glowing terminal-state node">
 
-Our newest initiative is **[FerroStep](https://github.com/Artificial-Humanity/FerroStep)**—a data-driven state-machine referee for multi-agent loops. Instead of hiding orchestration state inside a framework's graph object, FerroStep treats **your own database as the single source of truth**: AI agents and humans act as peers on one ledger, while a pure Rust core rules on every transition—who may move what, what a retry costs, and when a human takes over. Loop ceilings survive crashes, escalation is a routing decision rather than an error, and the whole system is inspectable with a database browser. True to the studio philosophy: an engine, not a platform—no runtime, no scheduler, no hosted anything.
+Also from the studio, **[FerroStep](https://github.com/Artificial-Humanity/FerroStep)**—a data-driven state-machine referee for multi-agent loops. Instead of hiding orchestration state inside a framework's graph object, FerroStep treats **your own database as the single source of truth**: AI agents and humans act as peers on one ledger, while a pure Rust core rules on every transition—who may move what, what a retry costs, and when a human takes over. Loop ceilings survive crashes, escalation is a routing decision rather than an error, and the whole system is inspectable with a database browser. True to the studio philosophy: an engine, not a platform—no runtime, no scheduler, no hosted anything.
+
+---
+
+## 📋 Coming soon: FerroTrack
+
+**[FerroTrack](https://github.com/Artificial-Humanity/FerroTrack)** is FerroStep's sibling—a light issue tracker built for the way agent work actually runs, where people and agents file, claim and close against one shared ledger rather than a chat log nobody can query afterwards. It is meant to be the store FerroStep reaches for out of the box, and a tracker in its own right. Early days, and built in the open.
 
 ---
 
