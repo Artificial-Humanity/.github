@@ -32,17 +32,11 @@ Another studio initiative is **[Council of Experts](https://github.com/Artificia
 
 ---
 
-## ⚙️ Introducing FerroStep
+## 🔄 Incubating: FerroLoop
 
-<img src="https://raw.githubusercontent.com/Artificial-Humanity/.github/main/assets/ferrostep-icon.png" width="96" align="right" alt="FerroStep: a stepped path from a hollow initial-state node to a glowing terminal-state node">
+Currently in the architecture phase, **[FerroLoop](https://github.com/Artificial-Humanity/FerroLoop)** is our cross-vendor agent orchestration and coordination platform for solo developers and small teams. It enables heterogeneous coding agents across different vendors (Claude Code, Antigravity CLI, Codex, Gemini, local models) to communicate, hand off tasks, enforce role-gated review loops, and track telemetry safely without vendor lock-in.
 
-Also from the studio, **[FerroStep](https://github.com/Artificial-Humanity/FerroStep)**—a data-driven state-machine referee for multi-agent loops. Instead of hiding orchestration state inside a framework's graph object, FerroStep treats **your own database as the single source of truth**: AI agents and humans act as peers on one ledger, while a pure Rust core rules on every transition—who may move what, what a retry costs, and when a human takes over. Loop ceilings survive crashes, escalation is a routing decision rather than an error, and the whole system is inspectable with a database browser. True to the studio philosophy: an engine, not a platform—no runtime, no scheduler, no hosted anything.
-
----
-
-## 📋 Coming soon: FerroTrack
-
-**[FerroTrack](https://github.com/Artificial-Humanity/FerroTrack)** is FerroStep's sibling—a light issue tracker built for the way agent work actually runs, where people and agents file, claim and close against one shared ledger rather than a chat log nobody can query afterwards. It is meant to be the store FerroStep reaches for out of the box, and a tracker in its own right. Early days, and built in the open.
+True to our studio philosophy: an open-source (Apache-2.0), self-hosted, single static Rust binary with an embedded database engine—coordinating external agent CLIs via standard protocols (ACP, MCP) with hard budget and token ceilings, all without cloud accounts or per-seat licensing.
 
 ---
 
