@@ -20,12 +20,6 @@ The voice inside Prosodia is its own project: **[Sonora](https://github.com/Arti
 
 ---
 
-## 🧑‍⚖️ Introducing Council of Experts
-
-Another studio initiative is **[Council of Experts](https://github.com/Artificial-Humanity/Council-of-Experts)**—a native macOS orchestration platform that runs a configurable council of LLM experts (Claude, Gemini, GPT, Grok, and local models) in parallel, has them critique and revise each other's drafts, and synthesizes their consensus through a Chairman model. It's built on the same philosophy as Prosodia: a Rust core with a native Swift/SwiftUI FFI layer, supporting live streaming, workspace file context, and multi-turn session persistence.
-
----
-
 ## 🎨 Introducing Lucida
 
 **[Lucida](https://github.com/Artificial-Humanity/Lucida)** is the studio's own image and video generation tool, and a single Rust binary either way. It reaches Google Gemini and Veo, Runway, Kling, hosted FLUX, Stability AI, OpenAI, or a ComfyUI running on your own hardware. It works as a command-line tool and as an **MCP server**, so the coding agents working on these projects can make their own artwork instead of waiting for someone to hand it over.
