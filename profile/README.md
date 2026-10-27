@@ -22,15 +22,15 @@ The voice inside Prosodia is its own project: **[Sonora](https://github.com/Arti
 
 ## 🎨 Introducing Lucida
 
-**[Lucida](https://github.com/Artificial-Humanity/Lucida)** is the studio's own image and video generation tool, and a single Rust binary either way. It reaches Google Gemini and Veo, Runway, Kling, hosted FLUX, Stability AI, OpenAI, or a ComfyUI running on your own hardware. It works as a command-line tool and as an **MCP server**, so the coding agents working on these projects can make their own artwork instead of waiting for someone to hand it over.
+**[Lucida](https://github.com/Artificial-Humanity/Lucida)** is the studio's own image and video generation tool, and a single Rust binary either way. It reaches Google Gemini and Veo, Runway, Kling, hosted FLUX, Stability AI, OpenAI, Lemonade for local NPU/GPU inference, or a ComfyUI running on your own hardware. It works as a command-line tool and as an **MCP server**, so the coding agents working on these projects can make their own artwork instead of waiting for someone to hand it over.
 
 ---
 
-## 🔄 Incubating: FerroLoop
+## 🔄 Introducing FerroLoop
 
-Currently in the architecture phase, **[FerroLoop](https://github.com/Artificial-Humanity/FerroLoop)** is our cross-vendor agent orchestration and coordination platform for solo developers and small teams. It enables heterogeneous coding agents across different vendors (Claude Code, Antigravity CLI, Codex, Gemini, local models) to communicate, hand off tasks, enforce role-gated review loops, and track telemetry safely without vendor lock-in.
+**[FerroLoop](https://github.com/Artificial-Humanity/FerroLoop)** is our cross-vendor agent orchestration and coordination platform for solo developers and small teams, and it is shipping today as a Rust workspace: the `fl` CLI with `fl-store` on embedded `redb`, `FerroWire` agent-to-agent messaging, five vendor adapters (Claude Code, Antigravity, Codex, Muse, and Grok), role-gated GitHub pull-request review loops, and **FerroDeck**, its web command center. Heterogeneous coding agents communicate, hand off tasks, and track telemetry safely without vendor lock-in.
 
-True to our studio philosophy: an open-source (Apache-2.0), self-hosted, single static Rust binary with an embedded database engine—coordinating external agent CLIs via standard protocols (ACP, MCP) with hard budget and token ceilings, all without cloud accounts or per-seat licensing.
+True to our studio philosophy: an open-source (Apache-2.0), self-hosted Rust binary with an embedded database engine—coordinating external agent CLIs over MCP with hard budget and token ceilings, all without cloud accounts or per-seat licensing.
 
 ---
 
